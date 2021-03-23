@@ -37,24 +37,24 @@ body {
 
 .grid .wrapper-intro {
 	grid-area: 1 / 1 / span 1 / span 1;
-	background-color: bisque;
+	/* background-color: bisque; */
 }
 
 .grid .wrapper-contact {
 	grid-area: 2 / 1 / span 1 / span 1;
-	background-color: aquamarine;
+	/* background-color: aquamarine; */
 }
 
 .grid .image {
 	grid-area: 1 / 2 / span 2 / span 1;
 	width: 100%;
 	margin-top: auto;
-	background-color: aqua;
+	/* background-color: aqua; */
 }
 
 .grid .wrapper-find-me {
 	grid-area: 1 / 3 / span 2 / span 1;
-	background-color: thistle;
+	/* background-color: thistle; */
 }
 
 /* Horizontal line befor the h2 tag */
@@ -166,16 +166,8 @@ body {
 	margin-left: 80px;
 }
 
-/* Mobile */
+/* Media queries */
 @media (max-width: 1048px) {
-	/* body {
-		background: url(/assert/images/img-background-mobile.svg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	} */
-
 	.grid .wrapper-intro {
 		grid-area: 1 / 1 / span 1 / span 3;	
 	}
@@ -195,43 +187,6 @@ body {
 	.grid .wrapper-find-me {
 		grid-area: 2 / 3 / span 2 / span 1;
 	}
-
-	/* .grid .wrapper-contact {
-		grid-area: 1 / 1 / span 2 / span 2;
-		margin-bottom: auto;
-		margin-top: 450px;
-		color: black;
-	}
-
-	.wrapper-email {
-		margin-bottom: 20px;
-	}
-
-	.wrapper-contact a {
-		color: black;
-	}
-
-	.wrapper-contact .title-hr-line:before {
-		border-bottom: 1px solid black;
-	} */
-
-/* .grid .image {
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		left: 30px;
-		z-index: -1;
-	} */
-
-/* .grid .image {
-		grid-area: 2 / 2 / span 2 / span 3;
-		background-color: aqua;
-		width: 100%;
-		margin-top: auto;
-		overflow: hidden;
-	}
-} */
-
 
 @media (max-width: 760px) {
 
@@ -294,21 +249,5 @@ body {
 
 	.grid .image {
 		grid-area: 2 / 2 / span 2 / span 3;
-		
-		/* background-color: aqua; */
 	}
-}
-
-@media (max-width: 649px) {
-	body {
-		background: url(../images/img-background-mobile.svg) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
-	}
-
-
-
-
 }
