@@ -76,7 +76,7 @@ body {
 	width: 1.5em;
 }
 
-/* Style for wrapper-intro */
+/* wrapper-intro */
 .wrapper-intro h2 {
 	margin-bottom: 100px;
 }
@@ -100,7 +100,7 @@ body {
 	max-width: 340px;
 }
 
-/* Style for wrapper-contact */
+/* wrapper-contact */
 .wrapper-contact {
 	color: white;
 	margin-top: auto;
@@ -129,7 +129,7 @@ body {
 	flex-wrap: wrap;
 }
 
-/* Style for wrapper-find-me */
+/* wrapper-find-me */
 .wrapper-find-me {
 	margin-top: auto;
 	margin-bottom: 20px;
@@ -169,7 +169,7 @@ body {
 /* Media queries */
 @media (max-width: 1048px) {
 	.grid .wrapper-intro {
-		grid-area: 1 / 1 / span 1 / span 3;	
+		grid-area: 1 / 1 / span 1 / span 3;
 	}
 
 	.wrapper-intro h2 {
@@ -187,46 +187,40 @@ body {
 	.grid .wrapper-find-me {
 		grid-area: 2 / 3 / span 2 / span 1;
 	}
+}
 
 @media (max-width: 760px) {
-
-	.grid .wrapper-contact {
-		grid-area: 2 / 1 / span 1 / span 1;
+	.grid {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
 	}
 
-	.wrapper-contact {
-		color: black;
-	}
-
-	.wrapper-contact h2 {
-		margin-bottom: 20px;
-	}
-	
 	.wrapper-contact .title-hr-line:before {
 		border-bottom: 1px solid black;
 	}
 
-	.wrapper-email {
-		margin-bottom: 15px;
+	.grid .wrapper-contact {
+		grid-area: 2 / 1 / span 1 / span 1;
+		padding-top: 40px;
 	}
-	
+
+	.wrapper-email {
+		margin-bottom: 10px;
+	}
+
+	.wrapper-contact,
 	.wrapper-contact a {
 		color: black;
 	}
 
-	.grid {
-		grid-template-columns: 50% auto;
-		
-	}
-
 	.grid .wrapper-find-me {
-		grid-area: 2 / 1 / span 2 / span 3;
+		grid-area: 3 / 1 / span 3 / span 3;
 	}
 
 	.wrapper-find-me h2 {
 		writing-mode: unset;
 		display: inline;
-		margin-right: 70px;
+		margin-right: 50px;
 	}
 
 	.wrapper-find-me h2::after {
@@ -248,6 +242,38 @@ body {
 	}
 
 	.grid .image {
-		grid-area: 2 / 2 / span 2 / span 3;
+		/* grid-area: 2 / 2 / span 2 / span 3; */
+		position: fixed;
+		width: 300px;
+		bottom: 0;
+		right: -40px;
+		z-index: -1;
+	}
+}
+
+@media (max-width: 520px) {
+	body {
+		background: url(../images/img-background-mobile.svg) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
+
+	.showcase h2 {
+		font-size: 22px;
+	}
+
+	.wrapper-intro .txt-name {
+		font-family: 'Asul', sans-serif;
+		font-size: 40px;
+	}
+
+	.wrapper-intro .txt-ux {
+		font-size: 20px;
+	}
+
+	.wrapper-icon {
+		text-align: center;
 	}
 }
